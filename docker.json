@@ -1,0 +1,93 @@
+{
+    "name": "docker",
+    "commands": [
+        {
+            "command": "docker build -t <tag-name> <location>",
+            "description": "Build a Docker container with a given tag from a specified location",
+            "placeholders": [
+                {
+                    "name": "<tag-name>",
+                    "description": "Tag name you want to give your Docker container"
+                },
+                {
+                    "name": "<location>",
+                    "description": "Location where your Dockerfile is located"
+                }
+            ]
+        },
+        {
+            "command": "docker run -d -p <host-port>:<container-port> <image-name>",
+            "description": "Run a Docker container in detached mode",
+            "placeholders": [
+                {
+                    "name": "<host-port>",
+                    "description": "Port on the host to bind to"
+                },
+                {
+                    "name": "<container-port>",
+                    "description": "Port inside the container"
+                },
+                {
+                    "name": "<image-name>",
+                    "description": "Name of the Docker image to run"
+                }
+            ]
+        },
+        {
+            "command": "docker ps",
+            "description": "List running Docker containers"
+					
+        },
+        {
+            "command": "docker stop <container-id>",
+            "description": "Stop a running Docker container",
+            "placeholders": [
+                {
+                    "name": "<container-id>",
+                    "description": "ID of the Docker container to stop"
+                }
+            ]
+        },
+        {
+            "command": "docker pull <image-name>",
+            "description": "Pull a Docker image from a registry",
+            "placeholders": [
+                {
+                    "name": "<image-name>",
+                    "description": "Name of the Docker image to pull"
+                }
+            ]
+        },
+        {
+            "command": "docker rmi <image-name>",
+            "description": "Remove a Docker image from the local storage",
+            "placeholders": [
+                {
+                    "name": "<image-name>",
+                    "description": "Name of the Docker image to remove"
+                }
+            ]
+        },
+        {
+            "command": "docker logs <container-id>",
+            "description": "Fetch the logs of a Docker container",
+            "placeholders": [
+                {
+                    "name": "<container-id>",
+                    "description": "ID of the Docker container"
+                }
+            ]
+        },
+        {
+            "command": "docker exec -it <container-id> /bin/bash",
+            "description": "Execute an interactive bash shell on the running container",
+            "placeholders": [
+                {
+                    "name": "<container-id>",
+                    "description": "ID of the Docker container"
+                }
+            ]
+        }
+    ]
+}
+

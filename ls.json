@@ -1,0 +1,45 @@
+{
+    "name": "ls",
+    "commands": [
+        {
+            "command": "ls",
+            "description": "List directory contents"
+        },
+        {
+            "command": "ls -l",
+            "description": "List in long format"
+        },
+        {
+            "command": "ls -a",
+            "description": "List all entries including those starting with a dot"
+        },
+        {
+            "command": "ls --color=auto",
+            "description": "Colorize the output based on the file type"
+        },
+        {
+            "command": "ls -lh",
+            "description": "List with long format and human-readable file sizes"
+        },
+        {
+            "command": "ls -lS",
+            "description": "List in long format and sort by file size"
+        },
+        {
+            "command": "ls -R",
+            "description": "List subdirectories recursively"
+        },
+        {
+            "command": "ls -lrt",
+            "description": "List in long format, sorted by modification time, newest last"
+        },
+        {
+            "command": "ls -d */",
+            "description": "List only directories"
+        },
+        {
+            "command": "ls -i",
+            "description": "List with inode numbers"
+        }
+    ]
+}

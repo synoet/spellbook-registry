@@ -1,0 +1,9 @@
+{
+    "name": "fly",
+    "commands": [
+        {
+            "command": "fly",
+            "description": "Launch Fly CLI with help description"
+        }
+    ]
+}

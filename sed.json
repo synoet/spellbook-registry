@@ -1,0 +1,92 @@
+{
+    "name": "sed",
+    "commands": [
+        {
+            "command": "sed 's/<old-string>/<new-string>/' <file>",
+            "description": "Replace the first occurrence of a string in a file",
+            "placeholders": [
+                {
+                    "name": "<old-string>",
+                    "description": "The string to be replaced"
+                },
+                {
+                    "name": "<new-string>",
+                    "description": "The new string to replace with"
+                },
+                {
+                    "name": "<file>",
+                    "description": "The file to operate on"
+                }
+            ]
+        },
+        {
+            "command": "sed -i 's/<old-string>/<new-string>/g' <file>",
+            "description": "Replace all occurrences of a string in a file (in-place)",
+            "placeholders": [
+                {
+                    "name": "<old-string>",
+                    "description": "The string to be replaced"
+                },
+                {
+                    "name": "<new-string>",
+                    "description": "The new string to replace with"
+                },
+                {
+                    "name": "<file>",
+                    "description": "The file to operate on"
+                }
+            ]
+        },
+        {
+            "command": "sed -n 'p' <file>",
+            "description": "Print the contents of a file",
+            "placeholders": [
+                {
+                    "name": "<file>",
+                    "description": "The file to print"
+                }
+            ]
+        },
+        {
+            "command": "sed '/<pattern>/d' <file>",
+            "description": "Delete lines matching a pattern from a file",
+            "placeholders": [
+                {
+                    "name": "<pattern>",
+                    "description": "The pattern to match lines to delete"
+                },
+                {
+                    "name": "<file>",
+                    "description": "The file to operate on"
+                }
+            ]
+        },
+        {
+            "command": "sed -e 's/<string1>/<replacement1>/' -e 's/<string2>/<replacement2>/' <file>",
+            "description": "Apply multiple sed commands (expressions) to a file",
+            "placeholders": [
+                {
+                    "name": "<string1>",
+                    "description": "First string to be replaced"
+                },
+                {
+                    "name": "<replacement1>",
+                    "description": "Replacement for the first string"
+                },
+                {
+                    "name": "<string2>",
+                    "description": "Second string to be replaced"
+                },
+                {
+                    "name": "<replacement2>",
+                    "description": "Replacement for the second string"
+                },
+                {
+                    "name": "<file>",
+                    "description": "The file to operate on"
+                }
+            ]
+        }
+    ]
+}
+

@@ -1,0 +1,76 @@
+{
+    "name": "grep",
+    "commands": [
+        {
+            "command": "grep '<pattern>' <file>",
+            "description": "Search for a pattern in a file and print matching lines",
+            "placeholders": [
+                {
+                    "name": "<pattern>",
+                    "description": "The pattern to search for"
+                },
+                {
+                    "name": "<file>",
+                    "description": "The file to search in"
+                }
+            ]
+        },
+        {
+            "command": "grep -i '<pattern>' <file>",
+            "description": "Case-insensitive search for a pattern in a file",
+            "placeholders": [
+                {
+                    "name": "<pattern>",
+                    "description": "The pattern to search for"
+                },
+                {
+                    "name": "<file>",
+                    "description": "The file to search in"
+                }
+            ]
+        },
+        {
+            "command": "grep -r '<pattern>' <directory>",
+            "description": "Recursively search for a pattern in all files under a directory",
+            "placeholders": [
+                {
+                    "name": "<pattern>",
+                    "description": "The pattern to search for"
+                },
+                {
+                    "name": "<directory>",
+                    "description": "The directory to search in"
+                }
+            ]
+        },
+        {
+            "command": "grep -v '<pattern>' <file>",
+            "description": "Invert match: print lines that do not match the pattern",
+            "placeholders": [
+                {
+                    "name": "<pattern>",
+                    "description": "The pattern to search for"
+                },
+                {
+                    "name": "<file>",
+                    "description": "The file to search in"
+                }
+            ]
+        },
+        {
+            "command": "grep -l '<pattern>' <files>",
+            "description": "Print only the names of files with matching lines, not the lines",
+            "placeholders": [
+                {
+                    "name": "<pattern>",
+                    "description": "The pattern to search for"
+                },
+                {
+                    "name": "<files>",
+                    "description": "The files to search in"
+                }
+            ]
+        }
+    ]
+}
+

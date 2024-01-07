@@ -1,0 +1,134 @@
+{
+    "name": "git",
+    "commands": [
+        {
+            "command": "git clone <repository-url>",
+            "description": "Clone a repository into a new directory",
+            "placeholders": [
+                {
+                    "name": "<repository-url>",
+                    "description": "URL of the Git repository"
+                }
+            ]
+        },
+        {
+            "command": "git status",
+            "description": "Show the working tree status"
+        },
+        {
+            "command": "git add <file-path>",
+            "description": "Add file contents to the index",
+            "placeholders": [
+                {
+                    "name": "<file-path>",
+                    "description": "Path of the file to add"
+                }
+            ]
+        },
+        {
+            "command": "git commit -m <message>",
+            "description": "Record changes to the repository",
+            "placeholders": [
+                {
+                    "name": "<message>",
+                    "description": "Commit message"
+                }
+            ]
+        },
+        {
+            "command": "git push <remote> <branch>",
+            "description": "Update remote refs along with associated objects",
+            "placeholders": [
+                {
+                    "name": "<remote>",
+                    "description": "Name of the remote repository"
+                },
+                {
+                    "name": "<branch>",
+                    "description": "Name of the branch to push"
+                }
+            ]
+        },
+        {
+            "command": "git pull <remote> <branch>",
+            "description": "Fetch from and integrate with another repository or a local branch",
+            "placeholders": [
+                {
+                    "name": "<remote>",
+                    "description": "Name of the remote repository"
+                },
+                {
+                    "name": "<branch>",
+                    "description": "Name of the branch to pull"
+                }
+            ]
+        },
+        {
+            "command": "git branch",
+            "description": "List, create, or delete branches"
+        },
+        {
+            "command": "git checkout <branch-name>",
+            "description": "Switch branches or restore working tree files",
+            "placeholders": [
+                {
+                    "name": "<branch-name>",
+                    "description": "Name of the branch to checkout"
+                }
+            ]
+        },
+        {
+            "command": "git merge <branch-name>",
+            "description": "Join two or more development histories together",
+            "placeholders": [
+                {
+                    "name": "<branch-name>",
+                    "description": "Name of the branch to merge into the current branch"
+                }
+            ]
+        },
+        {
+            "command": "git rebase <branch-name>",
+            "description": "Reapply commits on top of another base tip",
+            "placeholders": [
+                {
+                    "name": "<branch-name>",
+                    "description": "Name of the branch to rebase onto"
+                }
+            ]
+        },
+        {
+            "command": "git log",
+            "description": "Show commit logs"
+        },
+        {
+            "command": "git diff <file-path>",
+            "description": "Show changes between commits, commit and working tree, etc",
+            "placeholders": [
+                {
+                    "name": "<file-path>",
+                    "description": "Path of the file to show differences"
+                }
+            ]
+        },
+        {
+            "command": "git reset <commit>",
+            "description": "Reset current HEAD to the specified state",
+            "placeholders": [
+                {
+                    "name": "<commit>",
+                    "description": "Commit to reset to"
+                }
+            ]
+        },
+        {
+            "command": "git stash",
+            "description": "Stash the changes in a dirty working directory away"
+        },
+        {
+            "command": "git stash pop",
+            "description": "Apply stashed changes back to the working directory"
+        }
+    ]
+}
+

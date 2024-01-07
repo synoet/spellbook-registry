@@ -1,0 +1,84 @@
+{
+    "name": "node",
+    "commands": [
+        {
+            "command": "node <script.js>",
+            "description": "Run a Node.js script",
+            "placeholders": [
+                {
+                    "name": "<script.js>",
+                    "description": "Path to the Node.js script file"
+                }
+            ]
+        },
+        {
+            "command": "npm init",
+            "description": "Initialize a new Node.js project and create a package.json file"
+        },
+        {
+            "command": "npm install <package-name>",
+            "description": "Install a package and add it to the dependencies in package.json",
+            "placeholders": [
+                {
+                    "name": "<package-name>",
+                    "description": "Name of the npm package to install"
+                }
+            ]
+        },
+        {
+            "command": "npm install -g <package-name>",
+            "description": "Globally install an npm package",
+            "placeholders": [
+                {
+                    "name": "<package-name>",
+                    "description": "Name of the npm package to install globally"
+                }
+            ]
+        },
+        {
+            "command": "npm update",
+            "description": "Update all the packages listed to the latest version"
+        },
+        {
+            "command": "npm run <script>",
+            "description": "Run a script defined in the package.json",
+            "placeholders": [
+                {
+                    "name": "<script>",
+                    "description": "Name of the script to run"
+                }
+            ]
+        },
+        {
+            "command": "npm test",
+            "description": "Run the test script defined in package.json"
+        },
+        {
+            "command": "node --version",
+            "description": "Check the installed version of Node.js"
+        },
+        {
+            "command": "npm --version",
+            "description": "Check the installed version of npm"
+        },
+        {
+            "command": "npm uninstall <package-name>",
+            "description": "Remove a package from the node_modules directory and package.json",
+            "placeholders": [
+                {
+                    "name": "<package-name>",
+                    "description": "Name of the npm package to uninstall"
+                }
+            ]
+        },
+        {
+            "command": "npm list",
+            "description": "List installed packages"
+        },
+        {
+            "command": "npm list -g --depth 0",
+            "description": "List globally installed npm packages"
+        }
+    ]
+}
+

@@ -1,0 +1,54 @@
+{
+    "name": "chmod",
+    "commands": [
+        {
+            "command": "chmod <permissions> <file>",
+            "description": "Change file mode bits",
+            "placeholders": [
+                {
+                    "name": "<permissions>",
+                    "description": "Permissions in numeric or symbolic format"
+                },
+                {
+                    "name": "<file>",
+                    "description": "File to change permissions"
+                }
+            ]
+        },
+        {
+            "command": "chmod -R <permissions> <directory>",
+            "description": "Recursively change file mode bits in a directory",
+            "placeholders": [
+                {
+                    "name": "<permissions>",
+                    "description": "Permissions in numeric or symbolic format"
+                },
+                {
+                    "name": "<directory>",
+                    "description": "Directory to change permissions recursively"
+                }
+            ]
+        },
+        {
+            "command": "chmod u+x <file>",
+            "description": "Add execute permission for the user",
+            "placeholders": [
+                {
+                    "name": "<file>",
+                    "description": "File to change permissions"
+                }
+            ]
+        },
+        {
+            "command": "chmod 755 <file>",
+            "description": "Set read, write, and execute permissions for user, and read and execute permissions for group and others",
+            "placeholders": [
+                {
+                    "name": "<file>",
+                    "description": "File to change permissions"
+                }
+            ]
+        }
+    ]
+}
+

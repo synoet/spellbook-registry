@@ -1,0 +1,38 @@
+{
+    "name": "ps",
+    "commands": [
+        {
+            "command": "ps",
+            "description": "Display information about active processes"
+        },
+        {
+            "command": "ps aux",
+            "description": "Display detailed information about all running processes"
+        },
+        {
+            "command": "ps -ef",
+            "description": "Display full format listing of all processes"
+        },
+        {
+            "command": "ps -u <user-name>",
+            "description": "Display processes for a specific user",
+            "placeholders": [
+                {
+                    "name": "<user-name>",
+                    "description": "Username to display processes for"
+                }
+            ]
+        },
+        {
+            "command": "ps -p <pid>",
+            "description": "Display information about a process with a specific PID",
+            "placeholders": [
+                {
+                    "name": "<pid>",
+                    "description": "Process ID"
+                }
+            ]
+        }
+    ]
+}
+

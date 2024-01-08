@@ -1,0 +1,72 @@
+{
+    "name": "cargo",
+    "commands": [
+        {
+            "command": "cargo new <project-name>",
+            "description": "Create a new Rust project",
+            "placeholders": [
+                {
+                    "name": "<project-name>",
+                    "description": "Name of the new project"
+                }
+            ]
+        },
+        {
+            "command": "cargo build",
+            "description": "Compile the current project"
+        },
+        {
+            "command": "cargo run",
+            "description": "Run a binary or example of the local package"
+        },
+        {
+            "command": "cargo test",
+            "description": "Run the tests for the current project"
+        },
+        {
+            "command": "cargo check",
+            "description": "Analyze the current project and report errors, but don't build object files"
+        },
+        {
+            "command": "cargo clean",
+            "description": "Remove the target directory"
+        },
+        {
+            "command": "cargo doc",
+            "description": "Build this project's and its dependencies' documentation"
+        },
+        {
+            "command": "cargo update",
+            "description": "Update dependencies as recorded in the local lock file"
+        },
+        {
+            "command": "cargo bench",
+            "description": "Run the benchmarks"
+        },
+        {
+            "command": "cargo publish",
+            "description": "Package and upload this project to crates.io"
+        },
+        {
+            "command": "cargo install <crate-name>",
+            "description": "Install a Rust binary",
+            "placeholders": [
+                {
+                    "name": "<crate-name>",
+                    "description": "Name of the crate to install"
+                }
+            ]
+        },
+        {
+            "command": "cargo uninstall <crate-name>",
+            "description": "Uninstall a Rust binary",
+            "placeholders": [
+                {
+                    "name": "<crate-name>",
+                    "description": "Name of the crate to uninstall"
+                }
+            ]
+        }
+    ]
+}
+

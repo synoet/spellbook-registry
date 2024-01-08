@@ -1,0 +1,68 @@
+{
+    "name": "curl",
+    "commands": [
+        {
+            "command": "curl <URL>",
+            "description": "Fetch the content of a URL",
+            "placeholders": [
+                {
+                    "name": "<URL>",
+                    "description": "URL to fetch"
+                }
+            ]
+        },
+        {
+            "command": "curl -o <filename> <URL>",
+            "description": "Save the content of a URL to a file",
+            "placeholders": [
+                {
+                    "name": "<filename>",
+                    "description": "Name of the file to save content"
+                },
+                {
+                    "name": "<URL>",
+                    "description": "URL to fetch"
+                }
+            ]
+        },
+        {
+            "command": "curl -I <URL>",
+            "description": "Fetch the HTTP headers of a URL",
+            "placeholders": [
+                {
+                    "name": "<URL>",
+                    "description": "URL to fetch headers from"
+                }
+            ]
+        },
+        {
+            "command": "curl -X POST -d '<data>' <URL>",
+            "description": "Send a POST request with data",
+            "placeholders": [
+                {
+                    "name": "<data>",
+                    "description": "Data to send in POST request"
+                },
+                {
+                    "name": "<URL>",
+                    "description": "URL to send the POST request to"
+                }
+            ]
+        },
+        {
+            "command": "curl -u <username:password> <URL>",
+            "description": "Fetch a URL with authentication",
+            "placeholders": [
+                {
+                    "name": "<username:password>",
+                    "description": "Username and password for authentication"
+                },
+                {
+                    "name": "<URL>",
+                    "description": "URL to fetch"
+                }
+            ]
+        }
+    ]
+}
+

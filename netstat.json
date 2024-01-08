@@ -1,0 +1,30 @@
+{
+    "name": "netstat",
+    "commands": [
+        {
+            "command": "netstat",
+            "description": "Display network connections, routing tables, interface statistics, masquerade connections, and multicast memberships"
+        },
+        {
+            "command": "netstat -a",
+            "description": "Display all sockets (both listening and non-listening)"
+        },
+        {
+            "command": "netstat -t",
+            "description": "Display TCP connections"
+        },
+        {
+            "command": "netstat -u",
+            "description": "Display UDP connections"
+        },
+        {
+            "command": "netstat -l",
+            "description": "Display only listening sockets"
+        },
+        {
+            "command": "netstat -p",
+            "description": "Show the PID and name of the program to which each socket belongs"
+        }
+    ]
+}
+

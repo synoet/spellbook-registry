@@ -1,0 +1,44 @@
+{
+    "name": "lsof",
+    "commands": [
+        {
+            "command": "lsof",
+            "description": "List open files and the processes that opened them"
+        },
+        {
+            "command": "lsof -i",
+            "description": "List all network connections"
+        },
+        {
+            "command": "lsof -u <user-name>",
+            "description": "List files opened by a specific user",
+            "placeholders": [
+                {
+                    "name": "<user-name>",
+                    "description": "Username to list open files for"
+                }
+            ]
+        },
+        {
+            "command": "lsof +D <directory>",
+            "description": "List files opened by processes in a specific directory",
+            "placeholders": [
+                {
+                    "name": "<directory>",
+                    "description": "Directory to search in"
+                }
+            ]
+        },
+        {
+            "command": "lsof -i :<port>",
+            "description": "List files using a specific network port",
+            "placeholders": [
+                {
+                    "name": "<port>",
+                    "description": "Port number"
+                }
+            ]
+        }
+    ]
+}
+

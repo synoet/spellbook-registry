@@ -1,0 +1,54 @@
+{
+    "name": "tar",
+    "commands": [
+        {
+            "command": "tar -cvf <archive-name.tar> <directory>",
+            "description": "Create an uncompressed archive from directory",
+            "placeholders": [
+                {
+                    "name": "<archive-name.tar>",
+                    "description": "Name of the archive to create"
+                },
+                {
+                    "name": "<directory>",
+                    "description": "Directory to archive"
+                }
+            ]
+        },
+        {
+            "command": "tar -xvf <archive-name.tar>",
+            "description": "Extract an uncompressed archive",
+            "placeholders": [
+                {
+                    "name": "<archive-name.tar>",
+                    "description": "Name of the archive to extract"
+                }
+            ]
+        },
+        {
+            "command": "tar -czvf <archive-name.tar.gz> <directory>",
+            "description": "Create a compressed archive using gzip",
+            "placeholders": [
+                {
+                    "name": "<archive-name.tar.gz>",
+                    "description": "Name of the gzip compressed archive to create"
+                },
+                {
+                    "name": "<directory>",
+                    "description": "Directory to archive"
+                }
+            ]
+        },
+        {
+            "command": "tar -xzvf <archive-name.tar.gz>",
+            "description": "Extract a gzip compressed archive",
+            "placeholders": [
+                {
+                    "name": "<archive-name.tar.gz>",
+                    "description": "Name of the gzip compressed archive to extract"
+                }
+            ]
+        }
+    ]
+}
+

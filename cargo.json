@@ -3,53 +3,47 @@
     "commands": [
         {
             "command": "cargo new <project-name>",
-            "description": "Create a new Rust project",
-            "placeholders": [
-                {
-                    "name": "<project-name>",
-                    "description": "Name of the new project"
-                }
-            ]
+            "description": "Initializes a new Rust project with the specified name, setting up a directory and necessary Rust files."
         },
         {
             "command": "cargo build",
-            "description": "Compile the current project"
+            "description": "Compiles the Rust project along with its dependencies, producing executables or libraries."
         },
         {
             "command": "cargo run",
-            "description": "Run a binary or example of the local package"
+            "description": "Builds and executes the main binary of the Rust project, commonly used for development testing."
         },
         {
             "command": "cargo test",
-            "description": "Run the tests for the current project"
+            "description": "Runs the Rust project's test suite, including unit, doc, and integration tests."
         },
         {
             "command": "cargo check",
-            "description": "Analyze the current project and report errors, but don't build object files"
+            "description": "Analyzes the Rust project to report errors, without compiling the project into executables."
         },
         {
             "command": "cargo clean",
-            "description": "Remove the target directory"
+            "description": "Cleans up the Rust project by removing the target directory and its compiled artifacts."
         },
         {
             "command": "cargo doc",
-            "description": "Build this project's and its dependencies' documentation"
+            "description": "Generates documentation for the Rust project and its dependencies."
         },
         {
             "command": "cargo update",
-            "description": "Update dependencies as recorded in the local lock file"
+            "description": "Updates the Rust project's dependencies based on the Cargo.lock file."
         },
         {
             "command": "cargo bench",
-            "description": "Run the benchmarks"
+            "description": "Runs performance benchmarks defined in the Rust project."
         },
         {
             "command": "cargo publish",
-            "description": "Package and upload this project to crates.io"
+            "description": "Packages and uploads the Rust project to crates.io, Rust's package registry."
         },
         {
             "command": "cargo install <crate-name>",
-            "description": "Install a Rust binary",
+            "description": "Installs a Rust crate as a binary, making it available for use system-wide.",
             "placeholders": [
                 {
                     "name": "<crate-name>",
@@ -59,7 +53,7 @@
         },
         {
             "command": "cargo uninstall <crate-name>",
-            "description": "Uninstall a Rust binary",
+            "description": "Uninstalls a previously installed Rust crate from the system.",
             "placeholders": [
                 {
                     "name": "<crate-name>",
